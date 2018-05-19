@@ -1,0 +1,12 @@
+---
+ - name: To create a log directory in opt
+   file: path=/opt/apache-logs state=directory
+
+ - name: To create the empty file in /opt/apache-logs
+   file: path=/opt/apache-logs/access.log state=touch
+
+ - name: To copy my website source code, index.html
+   copy: src=files/index.html dest=/var/www/html/index.html
+
+ - name: To configure my apache config file httpd.conf
+   template: src=httpd.conf.j2 dest=/etc/httpd/conf/httpd.conf

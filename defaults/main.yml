@@ -1,0 +1,5 @@
+---
+# defaults file for httpd
+
+apache_port: 80
+apache_server: ec2-34-227-25-163.compute-1.amazonaws.com

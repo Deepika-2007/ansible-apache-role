@@ -1,0 +1,3 @@
+---
+ - name: We will start our Apache Web Server
+   service: name=httpd state=started enabled=yes
